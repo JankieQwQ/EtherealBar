@@ -18,19 +18,11 @@ class Bar {
         rain.playbackRate = 2;
         rain.play();
 
-        var image = document.getElementById('background');
-        image.onload = function() {
-            var engine = new RainyDay({
-                image: image
-            });
-            engine.rain([ [3, 2, 2] ], 100);
-        };
-        image.crossOrigin = 'anonymous';
-        image.src = 'https://mc.minecraftbox.link/-----https://i.imgur.com/U1Tqqdw.jpg';
     }
 }
 
 function load(){
     ethereal = new Bar('1.0.0');
     ethereal.raining();
+    document.getElementById("first").remove();
 }
