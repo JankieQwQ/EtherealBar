@@ -25,4 +25,6 @@ function load(){
     ethereal = new Bar('1.0.0');
     ethereal.raining();
     document.getElementById("first").remove();
+    const img = document.getElementById("image");
+    img.src = "image/bar.png";
 }
