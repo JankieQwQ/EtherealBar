@@ -24,6 +24,7 @@ class Bar {
 function load(){
     ethereal = new Bar('1.0.0');
     ethereal.raining();
+    ethereal.bartending();
     document.getElementById("first").remove();
     const img = document.getElementById("image");
     img.src = "image/bar.png";
@@ -33,7 +34,7 @@ function load(){
 function writeHTMLasJS(){
     var str="";
     str += "    <script type=\"text\/javascript\" id=\"myhk\" src=\"https:\/\/myhkw.cn\/api\/player\/170996683669\" key=\"170996683669\" m=\"1\"><\/script>";
-    str += "    <svg width=\"200\" height=\"200\" viewBox=\"-100 -100 200 200\">";
+    str += "    <svg width=\"50\" height=\"50\" viewBox=\"-100 -100 200 200\">";
     str += "        <g stroke=\"black\" stroke-width=\"2\">";
     str += "            <circle cx=\"0\" cy=\"-45\" r=\"7\" fill=\"#4F6D7A\" \/>";
     str += "            <circle cx=\"0\" cy=\"50\" r=\"7\" fill=\"#F79257\" \/>";
@@ -49,7 +50,7 @@ function writeHTMLasJS(){
     str += "                fill=\"#FDEA96\"";
     str += "            \/>";
     str += "        <\/g>";
-    str += "    <\/svg><a href=\"http:\/\/dd.ma\/bgOwnmAs\">Buy<\/a>";
+    str += "    <\/svg><a class=\"button\" href=\"http:\/\/dd.ma\/bgOwnmAs\">Buy Wine<\/a>";
     
     var Div=document.getElementById("before");
     Div.insertAdjacentHTML("beforeEnd",str);
