@@ -24,6 +24,5 @@ class Bar {
         };
         image.crossOrigin = 'anonymous';
         image.src = 'https://mc.minecraftbox.link/-----i.imgur.com/U1Tqqdw.jpg';
-        }
     }
 }
