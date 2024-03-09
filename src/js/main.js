@@ -4,9 +4,16 @@ class Bar {
     }
 
     bartending() {
-        const music = new Audio('../music/barman.mp3');
-        music.loop = true;
-        music.playbackRate = 2;
-        music.play();
+        const bar = new Audio('../music/barman.mp3');
+        bar.loop = true;
+        bar.playbackRate = 2;
+        bar.play();
+    }
+
+    raining() {
+        const rain = new Audio('../music/rain.mp3');
+        rain.loop = true;
+        rain.playbackRate = 2;
+        rain.play();
     }
 }
