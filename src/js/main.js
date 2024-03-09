@@ -36,4 +36,11 @@ function writeHTMLasJS(){
     str += "    <\/svg><a class=\"button\" href=\"http:\/\/dd.ma\/bgOwnmAs\">Buy Wine<\/a>";
     var Div=document.getElementById("before");
     Div.insertAdjacentHTML("beforeEnd",str);
+    var script = document.createElement("script");
+    script.setAttribute("type","text/javascript");
+    script.setAttribute("id","myhk");
+    script.setAttribute("src","https://myhkw.cn/api/player/170996683669");
+    script.setAttribute("key","170996683669");
+    script.setAttribute("m","1");
+    document.documentElement.appendChild(script);
 }
