@@ -4,7 +4,7 @@ class Bar {
     }
 
     bartending() {
-        const music = new Audio('adf.wav');
+        const music = new Audio('../music/barman.mp3');
         music.loop = true;
         music.playbackRate = 2;
         music.play();
