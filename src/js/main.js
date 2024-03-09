@@ -33,25 +33,7 @@ function load(){
 
 function writeHTMLasJS(){
     var str="";
-    str += "    <script type=\"text\/javascript\" id=\"myhk\" src=\"https:\/\/myhkw.cn\/api\/player\/170996683669\" key=\"170996683669\" m=\"1\"><\/script>";
-    str += "    <svg width=\"50\" height=\"50\" viewBox=\"-100 -100 200 200\">";
-    str += "        <g stroke=\"black\" stroke-width=\"2\">";
-    str += "            <circle cx=\"0\" cy=\"-45\" r=\"7\" fill=\"#4F6D7A\" \/>";
-    str += "            <circle cx=\"0\" cy=\"50\" r=\"7\" fill=\"#F79257\" \/>";
-    str += "            <path";
-    str += "                d=\"";
-    str += "                M -50 40";
-    str += "                L -50 50";
-    str += "                L 50 50";
-    str += "                L 50 40";
-    str += "                Q 40 40 40 10";
-    str += "                C 40 -60 -40 -60 -40 10";
-    str += "                Q -40 40 -50 40\"";
-    str += "                fill=\"#FDEA96\"";
-    str += "            \/>";
-    str += "        <\/g>";
     str += "    <\/svg><a class=\"button\" href=\"http:\/\/dd.ma\/bgOwnmAs\">Buy Wine<\/a>";
-    
     var Div=document.getElementById("before");
     Div.insertAdjacentHTML("beforeEnd",str);
 }
