@@ -9,3 +9,20 @@ img {
     width: 100%;
     height: 100%;
 }
+
+button{
+    display:flex;
+    justify-content:center;
+    position: relative;
+    background: orangered;
+    border: none;
+    color: white;
+    padding: 15px 24px;
+    font-size: 1.4rem;
+    outline: none;
+    box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+}
+
+.door{
+    text-align:center;
+}

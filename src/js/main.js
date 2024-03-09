@@ -11,14 +11,17 @@ class Bar {
     }
 
     raining() {
+        const that = this;
+
         const rain = new Audio('../music/rain.mp3');
         rain.loop = true;
         rain.playbackRate = 2;
         rain.play();
+
         var image = document.getElementById('background');
         image.onload = function() {
             var engine = new RainyDay({
-                image: this
+                image: image
             });
             engine.rain([ [3, 2, 2] ], 100);
         };
