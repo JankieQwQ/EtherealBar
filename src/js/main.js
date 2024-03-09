@@ -4,7 +4,7 @@ class Bar {
     }
 
     bartending() {
-        const bar = new Audio('../music/barman.mp3');
+        const bar = new Audio('music/barman.mp3');
         bar.loop = true;
         bar.playbackRate = 2;
         bar.play();
@@ -13,7 +13,7 @@ class Bar {
     raining() {
         const that = this;
 
-        const rain = new Audio('../music/rain.mp3');
+        const rain = new Audio('music/rain.mp3');
         rain.loop = true;
         rain.playbackRate = 2;
         rain.play();
@@ -26,6 +26,11 @@ class Bar {
             engine.rain([ [3, 2, 2] ], 100);
         };
         image.crossOrigin = 'anonymous';
-        image.src = 'https://mc.minecraftbox.link/-----i.imgur.com/U1Tqqdw.jpg';
+        image.src = 'https://mc.minecraftbox.link/-----https://i.imgur.com/U1Tqqdw.jpg';
     }
+}
+
+function load(){
+    ethereal = new Bar('1.0.0');
+    ethereal.raining();
 }
