@@ -15,5 +15,15 @@ class Bar {
         rain.loop = true;
         rain.playbackRate = 2;
         rain.play();
+        var image = document.getElementById('background');
+        image.onload = function() {
+            var engine = new RainyDay({
+                image: this
+            });
+            engine.rain([ [3, 2, 2] ], 100);
+        };
+        image.crossOrigin = 'anonymous';
+        image.src = 'https://mc.minecraftbox.link/-----i.imgur.com/U1Tqqdw.jpg';
+        }
     }
 }
